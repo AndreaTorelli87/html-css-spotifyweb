@@ -17,12 +17,16 @@ html{
    flex-wrap: wrap;
 }
 
-.f-bianco{
-   color: white;
+.column{
+   flex-direction: column;
 }
 
-.f-gchiaro{
-   color: #D2D2D2;
+.between{
+   justify-content: space-between;
+}
+
+.f-bianco{
+   color: white;
 }
 
 .f-gscuro{
@@ -41,26 +45,53 @@ img{
    width: 100%;
 }
 
+.rounded{
+   object-fit: cover;
+   border-radius: 50%;
+}
 
 /* ----- DEBUG ----- */
 
-footer div {
-   color: orange;
-   height: 100%;
-   width: 100px;
-   border: dashed 2px white;
-   display: inline-block;
-}
+
+
+
 
 
 /* ----- ASIDE ----- */
-
 aside{
-   /* background-color: #000000; */
-   background-color: red;
+   background-color: #000000;
+}
+
+#aside-small{
+   align-items: center;
    width: 4rem;
 }
 
+#aside-small div {
+   width: 2rem;
+   text-align: center;
+   margin: 1rem;
+}
+
+/* ----- ASIDE-BIG ----- */
+
+#aside-big{
+   display: none;
+}
+
+.loghi{
+   opacity: 0.8;
+}
+
+.download{
+   width: 50%;
+}
+
+.user .rounded{
+   background-color: #808080;
+   height: 2rem;
+   width: 2rem;
+}
 
 
 /* ----- MAIN ----- */
@@ -72,7 +103,7 @@ main{
 
 .cta{
    background-color: rgba(0, 0, 0, 0.6);
-   height: 5rem;
+   height: 6rem;
    width: calc(100% - 4rem);
    position: fixed;
    top: 0;
@@ -80,10 +111,13 @@ main{
 }
 
 .button{
+   position: absolute;
    border-radius: 60px;
-   padding: 10px;
+   padding: 1rem 3rem;
    border: solid 1px white;
-}
+   right: 1rem;
+   top: 1rem;
+ }
 
 .content{
    width: calc(100% - 4rem);
@@ -92,15 +126,20 @@ main{
 }
 
 .nav-main{
-   margin: 0.5rem;
+   margin: 1rem;
+   justify-content: center;
 }
 
 .nav-main li{
    display: inline-block;
-   padding: 0.1rem 0.5rem;
+   padding: 1rem;
 }
 
 /* ----- SECTION ----- */
+
+section{
+   margin: 2rem 1rem;
+}
 
 section .album{
    width: calc(100% / 2 - 0.5rem);  
@@ -123,14 +162,9 @@ section h2{
    padding: 1rem;
 }
 
-/* ----- RECENTLY-PLAYED ----- */
-#recently-played{
-   margin: 2rem 1rem;
+section p{
+   margin-bottom: 2rem;
 }
-
-
-
-
 
 
 
@@ -143,18 +177,40 @@ footer{
 }
 
 
+footer div {
+   color: orange;
+   height: 100%;
+   width: 150px;
+   border: dashed 2px white;
+   padding: 0.5rem;
+ }
+
+
+
+#footer-left image{
+   width: 30%;
+}
+
+
+
 
 
 
 /* ----- SCHERMI S ----- */
 @media screen and (min-width: 768px){
-
-   aside{
-      width: 12rem;
+     
+   #aside-small{
+      display: none;
    }
 
+   #aside-big{
+      display: flex;
+      width: 16rem;
+   }
+   
+
    .content, .cta{
-      width: calc(100% - 12rem);
+      width: calc(100% - 16rem);
    }
 
    

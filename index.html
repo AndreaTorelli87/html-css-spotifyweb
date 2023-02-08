@@ -12,17 +12,36 @@
 
     <body>
         <main class="d-flex">
-            <aside>
-
-
+            <aside id="aside-small" class="d-flex column between">
+                <div class="loghi">
+                    <img src="img/logo-small.svg" alt="logo">
+                    <img src="img/home.svg" alt="home">
+                    <img src="img/search.svg" alt="search">
+                    <img src="img/libreria.svg" alt="library">
+                </div>
+                <div class="user">
+                    <img class="download" src="img/download.svg" alt="download">
+                    <img class="rounded" src="img/profile.svg" alt="profile">
+                </div>
+            </aside>
+            <aside id="aside-big" class="d-flex column between">
+                <div class="loghi">
+                    <img src="img/logo.svg" alt="logo">
+                    <img src="img/home.svg" alt="home">
+                    <img src="img/search.svg" alt="search">
+                    <img src="img/libreria.svg" alt="library">
+                </div>
+                <div class="user">
+                    <img class="download" src="img/download.svg" alt="download">
+                    <img class="rounded" src="img/profile.svg" alt="profile">
+                </div>
             </aside>
             <div class="cta">
-                <div class="button f-bianco">EFFETTUA L'UPGRADE</div>
-
+                <a class="button f-bianco" href="#">EFFETTUA L'UPGRADE</a>
             </div>
             <div class="content">
-                <nav class="nav-main">
-                    <ul>
+                <nav>
+                    <ul class="d-flex wrap nav-main">
                         <li><a class="f-gscuro" href="#">IN EVIDENZA</a></li>
                         <li><a class="f-gscuro" href="#">PODCAST</a></li>
                         <li><a class="f-gscuro" href="#">CLASSIFICHE</a></li>
@@ -40,73 +59,94 @@
                             <span class="f-gscuro">Subtitle</span>
                         </li>
                         <li class="album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
-                            <h3 class="f-bianco">Heavy Metal</h3>
+                            <img src="img/stranger.jpeg" alt="stranger things">
+                            <h3 class="f-bianco">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                            <span class="f-gscuro">Kyle Dixon & Michael Stein</span>
+                        </li>
+                        <li class="album">
+                            <img src="img/aquietplace.jpeg" alt="a quiet place">
+                            <h3 class="f-bianco">A quit place</h3>
                             <span class="f-gscuro">Subtitle</span>
                         </li>
                         <li class="album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
-                            <h3 class="f-bianco">Heavy Metal</h3>
+                            <img src="img/split.jpeg" alt="split">
+                            <h3 class="f-bianco">Split</h3>
                             <span class="f-gscuro">Subtitle</span>
                         </li>
                         <li class="album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
-                            <h3 class="f-bianco">Heavy Metal</h3>
+                            <img src="img/cure.jpeg" alt="A cure for wellness">
+                            <h3 class="f-bianco">A cure for wellness</h3>
                             <span class="f-gscuro">Subtitle</span>
                         </li>
                         <li class="album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
-                            <h3 class="f-bianco">Heavy Metal</h3>
-                            <span class="f-gscuro">Subtitle</span>
-                        </li>
-                        <li class="album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
-                            <h3 class="f-bianco">Heavy Metal</h3>
-                            <span class="f-gscuro">Subtitle</span>
-                        </li>
-                    </ul>
-                </section>
-                <section id="recently-played">
-                    <h2 class="f-bianco">Recently-played</h2>
-                    <ul class="songs d-flex wrap">
-                        <li class="album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
-                            <h3 class="f-bianco">Heavy Metal</h3>
-                            <span class="f-gscuro">Subtitle</span>
-                        </li>
-                        <li class="album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
-                            <h3 class="f-bianco">Heavy Metal</h3>
+                            <img src="img/sinister.jpeg" alt="Sinister">
+                            <h3 class="f-bianco">Sinister</h3>
                             <span class="f-gscuro">Subtitle</span>
                         </li>
                     </ul>
                 </section>
-                <section id="recently-played">
-                    <h2 class="f-bianco">Recently-played</h2>
+                <section id="creato-per">
+                    <h2 class="f-bianco">Creato per John Doe</h2>
+                    <p class="f-gscuro">Più ascolti, più accurati saranno i suggerimenti</p>
                     <ul class="songs d-flex wrap">
                         <li class="album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
-                            <h3 class="f-bianco">Heavy Metal</h3>
-                            <span class="f-gscuro">Subtitle</span>
+                            <img src="img/radar.jpeg" alt="Release Radar">
+                            <h3 class="f-bianco">Release Radar</h3>
                         </li>
                         <li class="album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
-                            <h3 class="f-bianco">Heavy Metal</h3>
-                            <span class="f-gscuro">Subtitle</span>
+                            <img src="img/mixdaily.jpeg" alt="Daily Mix 1">
+                            <h3 class="f-bianco">Daily Mix 1</h3>
+                        </li>
+                    </ul>
+                </section>
+                <section id="artisti-popolari">
+                    <h2 class="f-bianco">Artisti più popolari</h2>
+                    <p class="f-gscuro">Più ascolti, più accurati saranno i suggerimenti</p>
+                    <ul class="songs d-flex wrap">
+                        <li class="album">
+                            <img class="rounded" src="img/youg.jpeg" alt="Lana Del Rey">
+                            <h3 class="f-bianco">Lana Del Rey</h3>
+                        </li>
+                        <li class="album">
+                            <img  class="rounded" src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                            <h3 class="f-bianco">Ludovico Einaudi</h3>
                         </li>
                     </ul>
                 </section>
             </div>
         </main>
-        <footer class="d-flex">
-            <div id="footer-left f-bianco">
-                LEFT
+        <footer class="d-flex between">
+            <div id="footer-left" class="f-bianco d-flex">
+                <div class="image"><img src="img/sinister.jpeg" alt="sinister"></div>
+                <div class="f-gscuro">
+                    <h5 class="f-bianco">Sinister</h5>
+                    Brano Nome
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
             </div>
-            <div id="footer-center f-bianco">
-                CENTER
+            <div id="footer-center" class="f-bianco">
+                <div>
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+
+                <div>
+                    <span class="f-bianco">0:25</span>
+                    <div class="barra"></div>
+                    <span class="f-bianco">4:35</span>
+                </div>
+
             </div>
-            <div id="footer-right f-bianco">
-                RIGHT
+            <div id="footer-right" class="f-bianco">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
             </div>
         </footer>
     </body>
