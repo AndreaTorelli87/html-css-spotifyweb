@@ -5,13 +5,179 @@
    font-family: sans-serif;
 }
 
-.flex-center{
+html{
+   font-size: 12px;
+}
+
+.d-flex{
    display: flex;
-   justify-content: center;
-   align-items: center;
+}
+
+.wrap{
+   flex-wrap: wrap;
+}
+
+.f-bianco{
+   color: white;
+}
+
+.f-gchiaro{
+   color: #D2D2D2;
+}
+
+.f-gscuro{
+   color: #7D7F84;
+}
+
+ul{
+   list-style: none;
+}
+
+a{
+   text-decoration: none;
+}
+
+img{
+   width: 100%;
+}
+
+
+/* ----- DEBUG ----- */
+
+footer div {
+   color: orange;
+   height: 100%;
+   width: 100px;
+   border: dashed 2px white;
+   display: inline-block;
+}
+
+
+/* ----- ASIDE ----- */
+
+aside{
+   /* background-color: #000000; */
+   background-color: red;
+   width: 4rem;
+}
+
+
+
+/* ----- MAIN ----- */
+
+main{
+   background-color: #141922;
+   height: calc(100vh - 8rem);
+}
+
+.cta{
+   background-color: rgba(0, 0, 0, 0.6);
+   height: 5rem;
+   width: calc(100% - 4rem);
+   position: fixed;
+   top: 0;
+   right: 0;
 }
 
 .button{
    border-radius: 60px;
    padding: 10px;
+   border: solid 1px white;
+}
+
+.content{
+   width: calc(100% - 4rem);
+   margin-top: 6rem;
+   overflow-y: scroll;
+}
+
+.nav-main{
+   margin: 0.5rem;
+}
+
+.nav-main li{
+   display: inline-block;
+   padding: 0.1rem 0.5rem;
+}
+
+/* ----- SECTION ----- */
+
+section .album{
+   width: calc(100% / 2 - 0.5rem);  
+   text-align: center;
+}
+
+section h2{
+   margin: 1rem 0;
+}
+
+.album span{
+   display: inline-block;
+}
+
+.songs{
+   gap: 0.5rem;
+}
+
+.album h3{
+   padding: 1rem;
+}
+
+/* ----- RECENTLY-PLAYED ----- */
+#recently-played{
+   margin: 2rem 1rem;
+}
+
+
+
+
+
+
+
+
+/* ----- FOOTER ----- */
+
+footer{
+   background-color: #282828;
+   height: 8rem;
+}
+
+
+
+
+
+/* ----- SCHERMI S ----- */
+@media screen and (min-width: 768px){
+
+   aside{
+      width: 12rem;
+   }
+
+   .content, .cta{
+      width: calc(100% - 12rem);
+   }
+
+   
+
+
+
+}
+
+/* ----- SCHERMI MD ----- */
+@media screen and (min-width: 992px){
+
+   section .album{
+      width: calc(100% / 4 - 0.5rem);  
+   }
+
+}
+
+/* ----- SCHERMI LG ----- */
+@media screen and (min-width: 1200px){
+
+   section .album{
+      width: calc(100% / 6 - 0.5rem);  
+   }
+
+
 }
