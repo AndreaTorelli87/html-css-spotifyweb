@@ -25,6 +25,10 @@ html{
    justify-content: space-between;
 }
 
+.hidden{
+   overflow-y: hidden;
+}
+
 .f-bianco{
    color: white;
 }
@@ -60,38 +64,92 @@ img{
 /* ----- ASIDE ----- */
 aside{
    background-color: #000000;
+   padding: 1rem;
+   min-height: 40rem;
 }
 
-#aside-small{
-   align-items: center;
-   width: 4rem;
+aside span{
+   display: inline-block;
 }
 
-#aside-small div {
-   width: 2rem;
+#aside-top{
+   height: calc(100% - 6rem);
+}
+
+#logo{
+   width: 70%;
+   padding-bottom: 2rem;
+}
+
+#menu-ab div{
+   height: 2rem;
+   width: 100%;
+   margin-bottom: 1rem;
+}
+
+.menu-icon{
+   height: 100%;
+   width: auto;
+   vertical-align: middle;
+}
+
+#menu-ab span{
+   display: inline-block;
+   vertical-align: middle;
+}
+
+/* ----- PLAYLIST ----- */
+
+#playlist h4{
+   padding: 1rem 0;
+}
+
+#playlist ul{
+   max-height: 200px;
+   overflow-y: scroll;
+}
+
+#plus{
+   height: 2.5rem;
+   width: 2.5rem;
+   font-size: 2rem;
+   font-weight: bold;
    text-align: center;
-   margin: 1rem;
+   color: black;
+   background-color: #A3A3A3;
+   display: inline-block;
 }
 
-/* ----- ASIDE-BIG ----- */
-
-#aside-big{
-   display: none;
+#playlist li{
+   padding: 0.5rem 0;
 }
 
-.loghi{
-   opacity: 0.8;
+#aside-bottom{
+ 
+}
+
+#aside-bottom div{
+   height: 2rem;
 }
 
 .download{
-   width: 50%;
+   height: 50%;
 }
 
-.user .rounded{
+#aside-bottom .rounded{
    background-color: #808080;
    height: 2rem;
    width: 2rem;
 }
+
+/* ----- ASIDE-SMALL ----- */
+
+#aside-small{
+   width: 4rem;
+}
+
+
+
 
 
 /* ----- MAIN ----- */
@@ -120,7 +178,6 @@ main{
  }
 
 .content{
-   width: calc(100% - 4rem);
    margin-top: 6rem;
    overflow-y: scroll;
 }
@@ -199,16 +256,11 @@ footer div {
 /* ----- SCHERMI S ----- */
 @media screen and (min-width: 768px){
      
-   #aside-small{
-      display: none;
-   }
-
-   #aside-big{
-      display: flex;
+  
+   aside{
       width: 16rem;
    }
    
-
    .content, .cta{
       width: calc(100% - 16rem);
    }

@@ -11,29 +11,53 @@
     </head>
 
     <body>
-        <main class="d-flex">
-            <aside id="aside-small" class="d-flex column between">
-                <div class="loghi">
-                    <img src="img/logo-small.svg" alt="logo">
-                    <img src="img/home.svg" alt="home">
-                    <img src="img/search.svg" alt="search">
-                    <img src="img/libreria.svg" alt="library">
+        <main class="d-flex hidden">
+            <aside>
+                <div id="aside-top" class="hidden d-flex column">
+                    <div id="logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </div>
+                    <div id="menu-ab" class="hidden">
+                        <div>
+                            <img class="menu-icon" src="img/home.svg" alt="home">
+                            <span class="f-bianco">Home</span>
+                        </div>
+                        <div>
+                            <img class="menu-icon" src="img/search.svg" alt="search">
+                            <span class="f-gscuro">Cerca</span>
+                        </div>
+                        <div>
+                            <img class="menu-icon" src="img/libreria.svg" alt="library">
+                            <span class="f-gscuro">La tua libreria</span>
+                        </div>
+                    </div>
+                    <div id="playlist" class="hidden d-flex column">
+                        <h4 class="f-bianco">PLAYLIST</h4>
+                        <div>
+                            <div id="plus">+</div>
+                            <span class="f-gscuro">Crea Playlist</span>
+                        </div>
+                        <ul>
+                            <li class="f-gscuro">Nome Playlist</li>
+                            <li class="f-gscuro">Nome Playlist</li>
+                            <li class="f-gscuro">Nome Playlist</li>
+                            <li class="f-gscuro">Nome Playlist</li>
+                            <li class="f-gscuro">Nome Playlist</li>
+                            <li class="f-gscuro">Nome Playlist</li>
+                            <li class="f-gscuro">Nome Playlist</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="user">
-                    <img class="download" src="img/download.svg" alt="download">
-                    <img class="rounded" src="img/profile.svg" alt="profile">
-                </div>
-            </aside>
-            <aside id="aside-big" class="d-flex column between">
-                <div class="loghi">
-                    <img src="img/logo.svg" alt="logo">
-                    <img src="img/home.svg" alt="home">
-                    <img src="img/search.svg" alt="search">
-                    <img src="img/libreria.svg" alt="library">
-                </div>
-                <div class="user">
-                    <img class="download" src="img/download.svg" alt="download">
-                    <img class="rounded" src="img/profile.svg" alt="profile">
+                <div id="aside-bottom">
+                    <div>
+                        <img class="download" src="img/download.svg" alt="download">
+                        <span class="f-gscuro">Installa app</span>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4 class="f-bianco">John Doe</h4>
+                        <img class="rounded" src="img/profile.svg" alt="profile">
+                    </div>
                 </div>
             </aside>
             <div class="cta">
@@ -136,11 +160,11 @@
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
 
-                <div>
+                <!-- <div>
                     <span class="f-bianco">0:25</span>
                     <div class="barra"></div>
                     <span class="f-bianco">4:35</span>
-                </div>
+                </div> -->
 
             </div>
             <div id="footer-right" class="f-bianco">
