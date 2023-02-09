@@ -18,46 +18,47 @@
                         <img src="img/logo.svg" alt="logo">
                     </div>
                     <div id="menu-ab" class="hidden">
-                        <div>
+                        <img id="logo-small" src="img/logo-small.svg" alt="logo">
+                        <a href="#">
                             <img class="menu-icon" src="img/home.svg" alt="home">
                             <span class="f-bianco">Home</span>
-                        </div>
-                        <div>
+                        </a>
+                        <a href="#">
                             <img class="menu-icon" src="img/search.svg" alt="search">
                             <span class="f-gscuro">Cerca</span>
-                        </div>
-                        <div>
+                        </a>
+                        <a href="#">
                             <img class="menu-icon" src="img/libreria.svg" alt="library">
                             <span class="f-gscuro">La tua libreria</span>
-                        </div>
+                        </a>
                     </div>
-                    <div id="playlist" class="hidden d-flex column">
+                    <div id="playlist" class="hidden column">
                         <h4 class="f-bianco">PLAYLIST</h4>
-                        <div>
+                        <a href="#">
                             <div id="plus">+</div>
                             <span class="f-gscuro">Crea Playlist</span>
-                        </div>
+                        </a>
                         <ul>
-                            <li class="f-gscuro">Nome Playlist</li>
-                            <li class="f-gscuro">Nome Playlist</li>
-                            <li class="f-gscuro">Nome Playlist</li>
-                            <li class="f-gscuro">Nome Playlist</li>
-                            <li class="f-gscuro">Nome Playlist</li>
-                            <li class="f-gscuro">Nome Playlist</li>
-                            <li class="f-gscuro">Nome Playlist</li>
+                            <li><a class="f-gscuro" href="#">Nome Playlist</a></li>
+                            <li><a class="f-gscuro" href="#">Nome Playlist</a></li>
+                            <li><a class="f-gscuro" href="#">Nome Playlist</a></li>
+                            <li><a class="f-gscuro" href="#">Nome Playlist</a></li>
+                            <li><a class="f-gscuro" href="#">Nome Playlist</a></li>
+                            <li><a class="f-gscuro" href="#">Nome Playlist</a></li>
+                            <li><a class="f-gscuro" href="#">Nome Playlist</a></li>
                         </ul>
                     </div>
                 </div>
                 <div id="aside-bottom">
-                    <div>
-                        <img class="download" src="img/download.svg" alt="download">
+                    <a href="#">
+                        <img class="download menu-icon" src="img/download.svg" alt="download">
                         <span class="f-gscuro">Installa app</span>
-                    </div>
+                    </a>
                     <hr>
-                    <div>
+                    <a href="#">
+                        <img class="rounded menu-icon" src="img/profile.svg" alt="profile">
                         <h4 class="f-bianco">John Doe</h4>
-                        <img class="rounded" src="img/profile.svg" alt="profile">
-                    </div>
+                    </a>
                 </div>
             </aside>
             <div class="cta">
@@ -66,7 +67,7 @@
             <div class="content">
                 <nav>
                     <ul class="d-flex wrap nav-main">
-                        <li><a class="f-gscuro" href="#">IN EVIDENZA</a></li>
+                        <li><a class="f-gscuro" href="#">IN E<u>VIDE</u>NZA</a></li>
                         <li><a class="f-gscuro" href="#">PODCAST</a></li>
                         <li><a class="f-gscuro" href="#">CLASSIFICHE</a></li>
                         <li><a class="f-gscuro" href="#">GENERI E MOOD</a></li>
@@ -78,32 +79,50 @@
                     <h2 class="f-bianco">Recently-played</h2>
                     <ul class="songs d-flex wrap">
                         <li class="album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
+                            <div class="over">
+                                <img src="img/metal_lifting.jpg" alt="metal">
+                                <div class="overlay"><i class="fa-regular fa-circle-play f-bianco"></i></div>
+                            </div>                            
                             <h3 class="f-bianco">Heavy Metal</h3>
                             <span class="f-gscuro">Subtitle</span>
                         </li>
                         <li class="album">
-                            <img src="img/stranger.jpeg" alt="stranger things">
+                            <div class="over">
+                                <img src="img/stranger.jpeg" alt="stranger things">
+                                <div class="overlay"><i class="fa-regular fa-circle-play f-bianco"></i></div>
+                            </div>  
                             <h3 class="f-bianco">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                             <span class="f-gscuro">Kyle Dixon & Michael Stein</span>
                         </li>
                         <li class="album">
-                            <img src="img/aquietplace.jpeg" alt="a quiet place">
+                            <div class="over">
+                                <img src="img/aquietplace.jpeg" alt="a quiet place">
+                                <div class="overlay"><i class="fa-regular fa-circle-play f-bianco"></i></div>
+                            </div> 
                             <h3 class="f-bianco">A quit place</h3>
                             <span class="f-gscuro">Subtitle</span>
                         </li>
                         <li class="album">
-                            <img src="img/split.jpeg" alt="split">
+                            <div class="over">
+                                <img src="img/split.jpeg" alt="split">
+                                <div class="overlay"><i class="fa-regular fa-circle-play f-bianco"></i></div>
+                            </div>
                             <h3 class="f-bianco">Split</h3>
                             <span class="f-gscuro">Subtitle</span>
                         </li>
                         <li class="album">
-                            <img src="img/cure.jpeg" alt="A cure for wellness">
+                            <div class="over">
+                                <img src="img/cure.jpeg" alt="A cure for wellness">
+                                <div class="overlay"><i class="fa-regular fa-circle-play f-bianco"></i></div>
+                            </div>
                             <h3 class="f-bianco">A cure for wellness</h3>
                             <span class="f-gscuro">Subtitle</span>
                         </li>
                         <li class="album">
-                            <img src="img/sinister.jpeg" alt="Sinister">
+                            <div class="over">
+                                <img src="img/sinister.jpeg" alt="Sinister">
+                                <div class="overlay"><i class="fa-regular fa-circle-play f-bianco"></i></div>
+                            </div>
                             <h3 class="f-bianco">Sinister</h3>
                             <span class="f-gscuro">Subtitle</span>
                         </li>
@@ -114,11 +133,17 @@
                     <p class="f-gscuro">Più ascolti, più accurati saranno i suggerimenti</p>
                     <ul class="songs d-flex wrap">
                         <li class="album">
-                            <img src="img/radar.jpeg" alt="Release Radar">
+                            <div class="over">
+                                <img src="img/radar.jpeg" alt="Release Radar">
+                                <div class="overlay"><i class="fa-regular fa-circle-play f-bianco"></i></div>
+                            </div>
                             <h3 class="f-bianco">Release Radar</h3>
                         </li>
                         <li class="album">
-                            <img src="img/mixdaily.jpeg" alt="Daily Mix 1">
+                            <div class="over">
+                                <img src="img/mixdaily.jpeg" alt="Daily Mix 1">
+                                <div class="overlay"><i class="fa-regular fa-circle-play f-bianco"></i></div>
+                            </div>
                             <h3 class="f-bianco">Daily Mix 1</h3>
                         </li>
                     </ul>
@@ -128,31 +153,37 @@
                     <p class="f-gscuro">Più ascolti, più accurati saranno i suggerimenti</p>
                     <ul class="songs d-flex wrap">
                         <li class="album">
-                            <img class="rounded" src="img/youg.jpeg" alt="Lana Del Rey">
+                            <div class="over">
+                                <img class="rounded" src="img/youg.jpeg" alt="Lana Del Rey">
+                                <div class="overlay rounded"><i class="fa-regular fa-circle-play f-bianco"></i></div>
+                            </div>
                             <h3 class="f-bianco">Lana Del Rey</h3>
                         </li>
                         <li class="album">
-                            <img  class="rounded" src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                            <div class="over">
+                                <img  class="rounded" src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                                <div class="overlay rounded"><i class="fa-regular fa-circle-play f-bianco"></i></div>
+                            </div>
                             <h3 class="f-bianco">Ludovico Einaudi</h3>
                         </li>
                     </ul>
                 </section>
             </div>
         </main>
-        <footer class="d-flex between">
-            <div id="footer-left" class="f-bianco d-flex">
-                <div class="image"><img src="img/sinister.jpeg" alt="sinister"></div>
+        <footer class="d-flex between center">
+            <div id="footer-left" class="d-flex between center">
+                <img src="img/sinister.jpeg" alt="sinister">
                 <div class="f-gscuro">
                     <h5 class="f-bianco">Sinister</h5>
                     Brano Nome
                 </div>
                 <div>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                    <i class="fa-regular fa-heart f-gscuro"></i>
+                    <i class="fa-regular fa-folder f-gscuro"></i>
                 </div>
             </div>
-            <div id="footer-center" class="f-bianco">
-                <div>
+            <div id="footer-center" class="f-bianco d-flex column">
+                <div class="bottoni d-flex between center">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
                     <i class="fa-regular fa-circle-play"></i>
@@ -160,17 +191,20 @@
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
 
-                <!-- <div>
+                <div>
                     <span class="f-bianco">0:25</span>
-                    <div class="barra"></div>
+                    <input type="range">
                     <span class="f-bianco">4:35</span>
-                </div> -->
+                </div>
 
             </div>
-            <div id="footer-right" class="f-bianco">
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-desktop"></i>
-                <i class="fa-solid fa-volume-high"></i>
+            <div id="footer-right" class="f-bianco d-flex between">
+                <div>
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <input type="range">
             </div>
         </footer>
     </body>
