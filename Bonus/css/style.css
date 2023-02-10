@@ -131,7 +131,7 @@ main{
 
 .content{
    margin-top: 6rem;
-   overflow-y: scroll;
+   overflow: auto;
 }
 
 .nav-main{
@@ -154,9 +154,14 @@ section{
    margin: 2rem 1rem;
 }
 
+section ul{
+   overflow: scroll;
+}
+
 section .album{
-   width: calc(100% / 2 - 0.5rem);  
+   width: 15rem;
    text-align: center;
+   flex-shrink: 0;
 }
 
 section h2{
@@ -420,15 +425,22 @@ input{
 /* ----- SCHERMI MD ----- */
 @media screen and (min-width: 992px){
 
-   section .album{
-      width: calc(100% / 4 - 0.5rem);  
-   }
+   
 }
 
 /* ----- SCHERMI LG ----- */
 @media screen and (min-width: 1200px){
 
-   section .album{
-      width: calc(100% / 6 - 0.5rem);  
+   
+}
+
+@media screen and (max-height: 800px){
+
+   .cta{
+      display: none;
+   }   
+
+   .content{
+      margin-top: 0;
    }
 }
