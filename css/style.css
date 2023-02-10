@@ -64,7 +64,7 @@ a:hover, i:hover, a span:hover{
 
 .scale:hover{
    transform: scale(1.2) ;
-   transition: transform 0.3;
+   transition: transform 0.3s;
    z-index: 2;
 }
 
@@ -140,12 +140,12 @@ main{
 }
 
 .nav-main li{
-   display: inline-block;
    padding: 1rem;
 }
 
-u{
-   text-decoration-color: yellowgreen;
+.nav-main li div{
+   border-bottom: solid 2px yellowgreen;
+   display: inline;
 }
 
 /* ----- SECTION ----- */
@@ -358,7 +358,7 @@ input{
       display: inline-block;
    }
    
-   #menu-ab a:first-child{
+   #menu-ab a:first-of-type{
       border-left: solid 1px greenyellow;
    }
    
